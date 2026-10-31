@@ -1,0 +1,7 @@
+fastapi>=0.115.0
+uvicorn>=0.34.0
+networkx>=3.4
+pydantic>=2.10
+python-dotenv>=1.0.1
+# Optional geo; the API falls back to a stdlib point-in-polygon if Shapely is missing.
+shapely>=2.0.6; python_version < "3.14"

@@ -1,0 +1,18 @@
+# Optional. The hackathon MVP runs without Docker (seed files + NetworkX).
+services:
+  postgis:
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_PASSWORD: aegis
+      POSTGRES_DB: aegis
+    ports:
+      - "5432:5432"
+    profiles: ["gis"]
+  neo4j:
+    image: neo4j:5
+    environment:
+      NEO4J_AUTH: neo4j/aegishimalaya
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    profiles: ["graph"]

@@ -1,0 +1,8 @@
+{
+  "vehicles": [
+    { "id": "veh-01", "name": "SDRF 6x6 Alpha", "kind": "truck", "capacity_kits": 80, "base_warehouse_id": "wh-utk", "status": "available" },
+    { "id": "veh-02", "name": "PWD Tipper Bravo", "kind": "truck", "capacity_kits": 55, "base_warehouse_id": "wh-utk", "status": "available" },
+    { "id": "veh-03", "name": "ITBP Light Charlie", "kind": "light_truck", "capacity_kits": 30, "base_warehouse_id": "wh-utk", "status": "available" },
+    { "id": "veh-04", "name": "Barkot Depot Delta", "kind": "truck", "capacity_kits": 60, "base_warehouse_id": "wh-bkt", "status": "available" }
+  ]
+}

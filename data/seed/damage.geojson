@@ -1,0 +1,74 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "sat-flood-maneri",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [78.510, 30.728],
+          [78.548, 30.728],
+          [78.548, 30.758],
+          [78.510, 30.758],
+          [78.510, 30.728]
+        ]]
+      },
+      "properties": {
+        "id": "sat-flood-maneri",
+        "source_id": "src-sat-01",
+        "valid_from_hour": 0,
+        "hazard": "flood",
+        "confidence": 0.86,
+        "summary": "Sentinel-2 false-colour change detection: inundated left bank at Maneri–Gangori.",
+        "estimated_structures_damaged": 42
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sat-slide-bhatwari",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [78.560, 30.770],
+          [78.605, 30.770],
+          [78.605, 30.805],
+          [78.560, 30.805],
+          [78.560, 30.770]
+        ]]
+      },
+      "properties": {
+        "id": "sat-slide-bhatwari",
+        "source_id": "src-sat-02",
+        "valid_from_hour": 6,
+        "hazard": "landslide",
+        "confidence": 0.91,
+        "summary": "PlanetScope 3 m: fresh debris fan across NH-34 km 47, Maneri–Bhatwari.",
+        "estimated_structures_damaged": 11
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sat-slide-sukki",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [78.708, 30.960],
+          [78.742, 30.960],
+          [78.742, 30.995],
+          [78.708, 30.995],
+          [78.708, 30.960]
+        ]]
+      },
+      "properties": {
+        "id": "sat-slide-sukki",
+        "source_id": "src-sat-03",
+        "valid_from_hour": 18,
+        "hazard": "landslide",
+        "confidence": 0.88,
+        "summary": "SAR coherence loss in the Sukki–Harsil gorge; probable full carriageway burial.",
+        "estimated_structures_damaged": 6
+      }
+    }
+  ]
+}

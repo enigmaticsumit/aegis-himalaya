@@ -1,0 +1,10 @@
+{
+  "items": [
+    { "id": "inv-utk-food", "warehouse_id": "wh-utk", "sku": "food_kit", "label": "Family food kits (7-day)", "qty": 420, "source_id": "src-inv-utk" },
+    { "id": "inv-utk-tarps", "warehouse_id": "wh-utk", "sku": "tarp", "label": "Tarpaulins", "qty": 260, "source_id": "src-inv-utk" },
+    { "id": "inv-utk-med", "warehouse_id": "wh-utk", "sku": "medicine_kit", "label": "PHC medicine kits", "qty": 90, "source_id": "src-inv-utk" },
+    { "id": "inv-bkt-food", "warehouse_id": "wh-bkt", "sku": "food_kit", "label": "Family food kits (7-day)", "qty": 180, "source_id": "src-inv-bkt" },
+    { "id": "inv-bkt-tarps", "warehouse_id": "wh-bkt", "sku": "tarp", "label": "Tarpaulins", "qty": 120, "source_id": "src-inv-bkt" },
+    { "id": "inv-bkt-med", "warehouse_id": "wh-bkt", "sku": "medicine_kit", "label": "PHC medicine kits", "qty": 40, "source_id": "src-inv-bkt" }
+  ]
+}

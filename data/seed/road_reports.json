@@ -1,0 +1,44 @@
+{
+  "reports": [
+    {
+      "id": "rr-01",
+      "source_id": "src-pwd-01",
+      "road_id": "rd-gangori-maneri",
+      "valid_from_hour": 0,
+      "status": "degraded",
+      "detail": "PWD: 0.4 m silt, one-lane, 10 km/h. Passable for 6x6."
+    },
+    {
+      "id": "rr-02",
+      "source_id": "src-pwd-02",
+      "road_id": "rd-maneri-bhatwari",
+      "valid_from_hour": 6,
+      "status": "blocked",
+      "detail": "Landslide km 47. Full closure. Dozer ETA unknown."
+    },
+    {
+      "id": "rr-03",
+      "source_id": "src-pwd-03",
+      "road_id": "rd-sukki-harsil",
+      "valid_from_hour": 18,
+      "status": "blocked",
+      "detail": "Night debris flow. Gorge impassable. Icing reported."
+    },
+    {
+      "id": "rr-04",
+      "source_id": "src-pwd-04",
+      "road_id": "rd-utk-dunda",
+      "valid_from_hour": 18,
+      "status": "blocked",
+      "detail": "Shoulder collapse at Dharasu bend. Divert via Chinyalisaur if required."
+    },
+    {
+      "id": "rr-05",
+      "source_id": "src-police-01",
+      "road_id": "rd-harsil-gangotri",
+      "valid_from_hour": 6,
+      "status": "degraded",
+      "detail": "Police: snow slush, chains required. Light vehicles only until 16:00."
+    }
+  ]
+}

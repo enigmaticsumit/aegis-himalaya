@@ -1,0 +1,229 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "set-uttarkashi",
+      "geometry": { "type": "Point", "coordinates": [78.443, 30.727] },
+      "properties": {
+        "id": "set-uttarkashi",
+        "name": "Uttarkashi",
+        "population": 18700,
+        "elderly_pct": 0.11,
+        "altitude_m": 1158,
+        "hours_since_contact": 2,
+        "vulnerability_notes": "District HQ; mixed urban ward plus riverside slums."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "set-heena",
+      "geometry": { "type": "Point", "coordinates": [78.402, 30.705] },
+      "properties": {
+        "id": "set-heena",
+        "name": "Heena",
+        "population": 920,
+        "elderly_pct": 0.18,
+        "altitude_m": 1210,
+        "hours_since_contact": 6,
+        "vulnerability_notes": "River-terrace hamlet below NH-34."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "set-dunda",
+      "geometry": { "type": "Point", "coordinates": [78.522, 30.682] },
+      "properties": {
+        "id": "set-dunda",
+        "name": "Dunda",
+        "population": 3400,
+        "elderly_pct": 0.14,
+        "altitude_m": 980,
+        "hours_since_contact": 5,
+        "vulnerability_notes": "Block HQ on the Tehri approach."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "set-nachiketa",
+      "geometry": { "type": "Point", "coordinates": [78.478, 30.648] },
+      "properties": {
+        "id": "set-nachiketa",
+        "name": "Nachiketa Tal",
+        "population": 410,
+        "elderly_pct": 0.22,
+        "altitude_m": 2480,
+        "hours_since_contact": 14,
+        "vulnerability_notes": "High lake hamlet; winter access already thin."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "set-chinyali",
+      "geometry": { "type": "Point", "coordinates": [78.325, 30.582] },
+      "properties": {
+        "id": "set-chinyali",
+        "name": "Chinyalisaur",
+        "population": 5100,
+        "elderly_pct": 0.13,
+        "altitude_m": 920,
+        "hours_since_contact": 4,
+        "vulnerability_notes": "Tehri reservoir rim; ferry backup if road fails."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "set-gangori",
+      "geometry": { "type": "Point", "coordinates": [78.498, 30.752] },
+      "properties": {
+        "id": "set-gangori",
+        "name": "Gangori",
+        "population": 1280,
+        "elderly_pct": 0.16,
+        "altitude_m": 1240,
+        "hours_since_contact": 3,
+        "vulnerability_notes": "Confluence village; first flood impact zone."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "set-maneri",
+      "geometry": { "type": "Point", "coordinates": [78.531, 30.741] },
+      "properties": {
+        "id": "set-maneri",
+        "name": "Maneri",
+        "population": 2100,
+        "elderly_pct": 0.15,
+        "altitude_m": 1290,
+        "hours_since_contact": 3,
+        "vulnerability_notes": "Dam township; workers colony on the left bank."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "set-bhatwari",
+      "geometry": { "type": "Point", "coordinates": [78.618, 30.818] },
+      "properties": {
+        "id": "set-bhatwari",
+        "name": "Bhatwari",
+        "population": 2650,
+        "elderly_pct": 0.17,
+        "altitude_m": 1620,
+        "hours_since_contact": 8,
+        "vulnerability_notes": "Tehsil HQ; gateway to the Gangotri highway."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "set-raithal",
+      "geometry": { "type": "Point", "coordinates": [78.678, 30.786] },
+      "properties": {
+        "id": "set-raithal",
+        "name": "Raithal",
+        "population": 740,
+        "elderly_pct": 0.24,
+        "altitude_m": 2200,
+        "hours_since_contact": 11,
+        "vulnerability_notes": "Steep terrace village; high elderly share."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "set-sukki",
+      "geometry": { "type": "Point", "coordinates": [78.702, 30.922] },
+      "properties": {
+        "id": "set-sukki",
+        "name": "Sukki",
+        "population": 380,
+        "elderly_pct": 0.21,
+        "altitude_m": 2560,
+        "hours_since_contact": 16,
+        "vulnerability_notes": "Narrow gorge settlement above the Bhagirathi."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "set-harsil",
+      "geometry": { "type": "Point", "coordinates": [78.738, 31.037] },
+      "properties": {
+        "id": "set-harsil",
+        "name": "Harsil",
+        "population": 860,
+        "elderly_pct": 0.19,
+        "altitude_m": 2620,
+        "hours_since_contact": 9,
+        "vulnerability_notes": "Army / ITBP staging; apple orchards and tourists."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "set-gangotri",
+      "geometry": { "type": "Point", "coordinates": [78.941, 30.994] },
+      "properties": {
+        "id": "set-gangotri",
+        "name": "Gangotri",
+        "population": 320,
+        "elderly_pct": 0.12,
+        "altitude_m": 3100,
+        "hours_since_contact": 18,
+        "vulnerability_notes": "Temple town; seasonal population plus winter caretakers."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "set-barkot",
+      "geometry": { "type": "Point", "coordinates": [78.205, 30.808] },
+      "properties": {
+        "id": "set-barkot",
+        "name": "Barkot",
+        "population": 4200,
+        "elderly_pct": 0.14,
+        "altitude_m": 1220,
+        "hours_since_contact": 4,
+        "vulnerability_notes": "Yamunotri approach; secondary relief node."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "set-purola",
+      "geometry": { "type": "Point", "coordinates": [78.082, 30.878] },
+      "properties": {
+        "id": "set-purola",
+        "name": "Purola",
+        "population": 3900,
+        "elderly_pct": 0.16,
+        "altitude_m": 1525,
+        "hours_since_contact": 7,
+        "vulnerability_notes": "Western block; snow-prone in late October."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "set-mori",
+      "geometry": { "type": "Point", "coordinates": [78.048, 31.002] },
+      "properties": {
+        "id": "set-mori",
+        "name": "Mori",
+        "population": 1600,
+        "elderly_pct": 0.20,
+        "altitude_m": 1400,
+        "hours_since_contact": 10,
+        "vulnerability_notes": "Tons valley; long last-mile from Barkot."
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "set-jhala",
+      "geometry": { "type": "Point", "coordinates": [78.778, 31.018] },
+      "properties": {
+        "id": "set-jhala",
+        "name": "Jhala",
+        "population": 210,
+        "elderly_pct": 0.26,
+        "altitude_m": 2680,
+        "hours_since_contact": 20,
+        "vulnerability_notes": "Tiny orchard hamlet off the Harsil spur."
+      }
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "sources": [
+    {
+      "id": "src-sat-01",
+      "type": "satellite",
+      "publisher": "NRSC / Sentinel-2 L2A",
+      "acquired_at": "2026-10-28T05:12:00+05:30",
+      "url": "seed://satellite/maneri-flood",
+      "note": "Pre-baked change-detection polygon for the hackathon demo."
+    },
+    {
+      "id": "src-sat-02",
+      "type": "satellite",
+      "publisher": "PlanetScope 3 m",
+      "acquired_at": "2026-10-28T10:40:00+05:30",
+      "url": "seed://satellite/bhatwari-slide",
+      "note": "Fresh debris fan on NH-34."
+    },
+    {
+      "id": "src-sat-03",
+      "type": "satellite",
+      "publisher": "Sentinel-1 IW GRD",
+      "acquired_at": "2026-10-28T22:05:00+05:30",
+      "url": "seed://satellite/sukki-coherence",
+      "note": "Coherence-loss proxy for gorge burial."
+    },
+    {
+      "id": "src-wx-imd",
+      "type": "weather",
+      "publisher": "India Meteorological Department",
+      "acquired_at": "2026-10-28T04:30:00+05:30",
+      "url": "seed://weather/imd-uttarkashi",
+      "note": "District rainfall warning feed (simulated)."
+    },
+    {
+      "id": "src-wx-cwc",
+      "type": "weather",
+      "publisher": "Central Water Commission",
+      "acquired_at": "2026-10-28T21:00:00+05:30",
+      "url": "seed://weather/cwc-maneri",
+      "note": "Gauge-above-danger bulletin (simulated)."
+    },
+    {
+      "id": "src-pwd-01",
+      "type": "road",
+      "publisher": "PWD Uttarkashi",
+      "acquired_at": "2026-10-28T05:50:00+05:30",
+      "url": "seed://pwd/gangori-maneri",
+      "note": "Field sitrep."
+    },
+    {
+      "id": "src-pwd-02",
+      "type": "road",
+      "publisher": "PWD Uttarkashi",
+      "acquired_at": "2026-10-28T10:15:00+05:30",
+      "url": "seed://pwd/maneri-bhatwari",
+      "note": "Closure order km 47."
+    },
+    {
+      "id": "src-pwd-03",
+      "type": "road",
+      "publisher": "PWD Uttarkashi",
+      "acquired_at": "2026-10-28T22:20:00+05:30",
+      "url": "seed://pwd/sukki-harsil",
+      "note": "Night gorge closure."
+    },
+    {
+      "id": "src-pwd-04",
+      "type": "road",
+      "publisher": "PWD Uttarkashi",
+      "acquired_at": "2026-10-28T21:40:00+05:30",
+      "url": "seed://pwd/dunda",
+      "note": "Dharasu bend collapse."
+    },
+    {
+      "id": "src-police-01",
+      "type": "road",
+      "publisher": "Uttarkashi Police Control",
+      "acquired_at": "2026-10-28T11:00:00+05:30",
+      "url": "seed://police/gangotri-highway",
+      "note": "Chain advisory."
+    },
+    {
+      "id": "src-cit-01",
+      "type": "citizen",
+      "publisher": "Gangori ASHA worker (WhatsApp to DEOC)",
+      "acquired_at": "2026-10-28T04:48:00+05:30",
+      "url": "seed://citizen/gangori",
+      "note": "Verified by block coordinator at 05:10."
+    },
+    {
+      "id": "src-cit-02",
+      "type": "citizen",
+      "publisher": "Maneri PHC staff",
+      "acquired_at": "2026-10-28T05:05:00+05:30",
+      "url": "seed://citizen/maneri",
+      "note": "Phone sitrep."
+    },
+    {
+      "id": "src-cit-03",
+      "type": "citizen",
+      "publisher": "Bhatwari tehsildar",
+      "acquired_at": "2026-10-28T10:22:00+05:30",
+      "url": "seed://citizen/bhatwari",
+      "note": "Official voice note."
+    },
+    {
+      "id": "src-cit-04",
+      "type": "citizen",
+      "publisher": "Gangotri temple committee",
+      "acquired_at": "2026-10-28T11:30:00+05:30",
+      "url": "seed://citizen/gangotri",
+      "note": "HF radio via Harsil."
+    },
+    {
+      "id": "src-cit-05",
+      "type": "citizen",
+      "publisher": "ITBP Harsil",
+      "acquired_at": "2026-10-28T22:10:00+05:30",
+      "url": "seed://citizen/harsil",
+      "note": "Airdrop LZ coordinates attached."
+    },
+    {
+      "id": "src-cit-06",
+      "type": "citizen",
+      "publisher": "Raithal gram pradhan",
+      "acquired_at": "2026-10-28T10:55:00+05:30",
+      "url": "seed://citizen/raithal",
+      "note": "SMS to 1070."
+    },
+    {
+      "id": "src-inv-utk",
+      "type": "inventory",
+      "publisher": "DDMA Uttarkashi godown ledger",
+      "acquired_at": "2026-10-28T03:00:00+05:30",
+      "url": "seed://inventory/uttarkashi",
+      "note": "Night stocktake before the cloudburst."
+    },
+    {
+      "id": "src-inv-bkt",
+      "type": "inventory",
+      "publisher": "Barkot Relief Depot ledger",
+      "acquired_at": "2026-10-28T03:10:00+05:30",
+      "url": "seed://inventory/barkot",
+      "note": "Verified stock."
+    }
+  ]
+}
