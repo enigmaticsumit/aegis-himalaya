@@ -1,0 +1,27 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "wh-utk",
+      "geometry": { "type": "Point", "coordinates": [78.441, 30.729] },
+      "properties": {
+        "id": "wh-utk",
+        "name": "Uttarkashi Civil Supply Godown",
+        "settlement_id": "set-uttarkashi",
+        "operator": "District Disaster Management Authority"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "wh-bkt",
+      "geometry": { "type": "Point", "coordinates": [78.208, 30.810] },
+      "properties": {
+        "id": "wh-bkt",
+        "name": "Barkot Relief Depot",
+        "settlement_id": "set-barkot",
+        "operator": "Uttarakhand SDRF staging"
+      }
+    }
+  ]
+}

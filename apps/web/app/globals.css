@@ -1,0 +1,119 @@
+:root {
+  --bg: #071018;
+  --panel: #0d1b27;
+  --panel-2: #102232;
+  --line: #1e3a4c;
+  --text: #e7f1f6;
+  --muted: #8aa4b5;
+  --accent: #3ddec7;
+  --warn: #f0b429;
+  --danger: #ff6b6b;
+  --ok: #6ee7a8;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; background: var(--bg); color: var(--text); font-family: "Segoe UI", system-ui, sans-serif; }
+
+.app {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 56px 1fr 108px;
+  grid-template-columns: 300px 1fr 340px;
+  grid-template-areas:
+    "top top top"
+    "left map right"
+    "bottom bottom bottom";
+}
+
+.top { grid-area: top; display: flex; align-items: center; justify-content: space-between; padding: 0 16px; border-bottom: 1px solid var(--line); background: #08141e; }
+.brand { display: flex; flex-direction: column; }
+.brand strong { letter-spacing: 0.12em; font-size: 13px; color: var(--accent); }
+.brand span { font-size: 11px; color: var(--muted); }
+.top-actions { display: flex; gap: 8px; align-items: center; }
+
+.left, .right { overflow: auto; background: var(--panel); border-right: 1px solid var(--line); }
+.right { border-right: none; border-left: 1px solid var(--line); }
+.map { grid-area: map; position: relative; min-width: 0; }
+.map-el { position: absolute; inset: 0; }
+.bottom { grid-area: bottom; border-top: 1px solid var(--line); background: #08141e; display: grid; grid-template-columns: 1fr 280px; gap: 12px; padding: 10px 14px; }
+
+h2 { margin: 0; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); padding: 12px 12px 6px; }
+.card { margin: 8px 10px; padding: 10px; background: var(--panel-2); border: 1px solid var(--line); border-radius: 8px; cursor: pointer; }
+.card.active { border-color: var(--accent); }
+.card h3 { margin: 0 0 4px; font-size: 14px; }
+.meta { font-size: 11px; color: var(--muted); display: flex; gap: 8px; flex-wrap: wrap; }
+.badge { font-size: 10px; padding: 2px 6px; border-radius: 999px; border: 1px solid var(--line); }
+.badge.iso { color: var(--danger); border-color: #5c2a2a; }
+.badge.ok { color: var(--ok); }
+.badge.proposed { color: var(--warn); }
+.badge.authorized { color: var(--ok); }
+.badge.rejected, .badge.replanned { color: var(--muted); }
+.badge.airdrop { color: #c4b5fd; }
+
+button {
+  background: #143044;
+  color: var(--text);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+button.primary { background: #0f766e; border-color: #14b8a6; }
+button.good { background: #14532d; border-color: #22c55e; }
+button.bad { background: #4c1d1d; border-color: #ef4444; }
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.row-actions { display: flex; gap: 6px; margin-top: 8px; }
+.briefing { font-size: 13px; color: var(--text); line-height: 1.4; }
+.clock { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.clock button.active { background: #0f766e; border-color: var(--accent); }
+.err { color: var(--danger); font-size: 12px; padding: 0 12px; }
+
+.drawer {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  top: 12px;
+  width: min(380px, 92%);
+  background: #0b1822ee;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: auto;
+  z-index: 5;
+  padding: 12px;
+}
+.drawer h3 { margin: 0 0 8px; }
+.source { font-size: 12px; border-top: 1px solid var(--line); padding: 8px 0; }
+.source .role { color: var(--accent); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; }
+
+.legend {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  z-index: 3;
+  background: #0b1822cc;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.legend div { display: flex; align-items: center; gap: 6px; margin: 3px 0; }
+.swatch { width: 12px; height: 12px; border-radius: 50%; display: inline-block; }
+
+@media (max-width: 980px) {
+  .app {
+    height: auto;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 50vh auto auto auto;
+    grid-template-areas:
+      "top"
+      "map"
+      "left"
+      "right"
+      "bottom";
+  }
+  .left, .right { max-height: 320px; }
+}

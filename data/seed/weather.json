@@ -1,0 +1,28 @@
+{
+  "alerts": [
+    {
+      "id": "wx-01",
+      "source_id": "src-wx-imd",
+      "valid_from_hour": 0,
+      "severity": "orange",
+      "headline": "IMD orange: extremely heavy rain Bhagirathi catchment",
+      "detail": "72 mm / 3 h recorded at Maneri AWS. Flash-flood guidance remains in force until 10:00 IST."
+    },
+    {
+      "id": "wx-02",
+      "source_id": "src-wx-imd",
+      "valid_from_hour": 6,
+      "severity": "red",
+      "headline": "IMD red upgrade + high freeze line",
+      "detail": "Rain turning to wet snow above 2,600 m. Slope saturation likely to trigger further debris flows on NH-34."
+    },
+    {
+      "id": "wx-03",
+      "source_id": "src-wx-cwc",
+      "valid_from_hour": 18,
+      "severity": "red",
+      "headline": "CWC: Bhagirathi still above danger at Maneri",
+      "detail": "Night-time drop of 0.4 m only. Gangotri highway not recommended after dusk; icing on Sukki–Harsil."
+    }
+  ]
+}

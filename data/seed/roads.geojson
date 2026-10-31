@@ -1,0 +1,230 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "rd-utk-heena",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[78.443, 30.727], [78.402, 30.705]]
+      },
+      "properties": {
+        "id": "rd-utk-heena",
+        "name": "NH-34 Uttarkashi–Heena",
+        "from": "set-uttarkashi",
+        "to": "set-heena",
+        "length_km": 7.4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rd-utk-dunda",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[78.443, 30.727], [78.522, 30.682]]
+      },
+      "properties": {
+        "id": "rd-utk-dunda",
+        "name": "Uttarkashi–Dunda link",
+        "from": "set-uttarkashi",
+        "to": "set-dunda",
+        "length_km": 14.2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rd-utk-nachiketa",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[78.443, 30.727], [78.478, 30.648]]
+      },
+      "properties": {
+        "id": "rd-utk-nachiketa",
+        "name": "Nachiketa Tal jeep track",
+        "from": "set-uttarkashi",
+        "to": "set-nachiketa",
+        "length_km": 18.6
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rd-utk-chinyali",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[78.443, 30.727], [78.325, 30.582]]
+      },
+      "properties": {
+        "id": "rd-utk-chinyali",
+        "name": "Chinyalisaur corridor",
+        "from": "set-uttarkashi",
+        "to": "set-chinyali",
+        "length_km": 28.1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rd-utk-gangori",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[78.443, 30.727], [78.498, 30.752]]
+      },
+      "properties": {
+        "id": "rd-utk-gangori",
+        "name": "NH-34 to Gangori",
+        "from": "set-uttarkashi",
+        "to": "set-gangori",
+        "length_km": 8.1
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rd-gangori-maneri",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[78.498, 30.752], [78.531, 30.741]]
+      },
+      "properties": {
+        "id": "rd-gangori-maneri",
+        "name": "Gangori–Maneri left bank",
+        "from": "set-gangori",
+        "to": "set-maneri",
+        "length_km": 4.6
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rd-maneri-bhatwari",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[78.531, 30.741], [78.618, 30.818]]
+      },
+      "properties": {
+        "id": "rd-maneri-bhatwari",
+        "name": "NH-34 Maneri–Bhatwari",
+        "from": "set-maneri",
+        "to": "set-bhatwari",
+        "length_km": 16.8
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rd-bhatwari-raithal",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[78.618, 30.818], [78.678, 30.786]]
+      },
+      "properties": {
+        "id": "rd-bhatwari-raithal",
+        "name": "Raithal spur",
+        "from": "set-bhatwari",
+        "to": "set-raithal",
+        "length_km": 9.4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rd-bhatwari-sukki",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[78.618, 30.818], [78.702, 30.922]]
+      },
+      "properties": {
+        "id": "rd-bhatwari-sukki",
+        "name": "Gangotri highway Bhatwari–Sukki",
+        "from": "set-bhatwari",
+        "to": "set-sukki",
+        "length_km": 21.3
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rd-sukki-harsil",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[78.702, 30.922], [78.738, 31.037]]
+      },
+      "properties": {
+        "id": "rd-sukki-harsil",
+        "name": "Sukki–Harsil gorge",
+        "from": "set-sukki",
+        "to": "set-harsil",
+        "length_km": 18.9
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rd-harsil-gangotri",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[78.738, 31.037], [78.941, 30.994]]
+      },
+      "properties": {
+        "id": "rd-harsil-gangotri",
+        "name": "Harsil–Gangotri",
+        "from": "set-harsil",
+        "to": "set-gangotri",
+        "length_km": 25.4
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rd-harsil-jhala",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[78.738, 31.037], [78.778, 31.018]]
+      },
+      "properties": {
+        "id": "rd-harsil-jhala",
+        "name": "Jhala orchard track",
+        "from": "set-harsil",
+        "to": "set-jhala",
+        "length_km": 5.2
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rd-utk-barkot",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[78.443, 30.727], [78.205, 30.808]]
+      },
+      "properties": {
+        "id": "rd-utk-barkot",
+        "name": "Uttarkashi–Barkot",
+        "from": "set-uttarkashi",
+        "to": "set-barkot",
+        "length_km": 38.5
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rd-barkot-purola",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[78.205, 30.808], [78.082, 30.878]]
+      },
+      "properties": {
+        "id": "rd-barkot-purola",
+        "name": "Barkot–Purola",
+        "from": "set-barkot",
+        "to": "set-purola",
+        "length_km": 19.7
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rd-purola-mori",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [[78.082, 30.878], [78.048, 31.002]]
+      },
+      "properties": {
+        "id": "rd-purola-mori",
+        "name": "Purola–Mori Tons valley",
+        "from": "set-purola",
+        "to": "set-mori",
+        "length_km": 22.0
+      }
+    }
+  ]
+}

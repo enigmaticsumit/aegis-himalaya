@@ -1,0 +1,52 @@
+{
+  "reports": [
+    {
+      "id": "cit-01",
+      "source_id": "src-cit-01",
+      "settlement_id": "set-gangori",
+      "valid_from_hour": 0,
+      "confidence": 0.7,
+      "text": "Water entered ground floor of 8 houses near the sangam. Families on rooftops. Need tarps and dry food."
+    },
+    {
+      "id": "cit-02",
+      "source_id": "src-cit-02",
+      "settlement_id": "set-maneri",
+      "valid_from_hour": 0,
+      "confidence": 0.75,
+      "text": "Colony road washed. Two injured. PHC asking for tetanus and ORS."
+    },
+    {
+      "id": "cit-03",
+      "source_id": "src-cit-03",
+      "settlement_id": "set-bhatwari",
+      "valid_from_hour": 6,
+      "confidence": 0.8,
+      "text": "Loud slide heard towards Maneri. Highway closed. Buses stuck this side. No trucks from HQ since morning."
+    },
+    {
+      "id": "cit-04",
+      "source_id": "src-cit-04",
+      "settlement_id": "set-gangotri",
+      "valid_from_hour": 6,
+      "confidence": 0.65,
+      "text": "Temple committee: 40 winter staff plus 12 pilgrims. LPG and rice for two days only."
+    },
+    {
+      "id": "cit-05",
+      "source_id": "src-cit-05",
+      "settlement_id": "set-harsil",
+      "valid_from_hour": 18,
+      "confidence": 0.82,
+      "text": "Jhala track open on foot only. Highway towards Sukki buried. Army camp can receive airdrop."
+    },
+    {
+      "id": "cit-06",
+      "source_id": "src-cit-06",
+      "settlement_id": "set-raithal",
+      "valid_from_hour": 6,
+      "confidence": 0.6,
+      "text": "Elderly ward cannot walk the bypass. Request mule or light vehicle if jeep track holds."
+    }
+  ]
+}
