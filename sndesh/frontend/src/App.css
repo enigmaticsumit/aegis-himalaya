@@ -1,0 +1,138 @@
+
+#root {
+  min-height: 100vh;
+}
+
+button {
+  cursor: pointer;
+}
+
+.input-field {
+  width: 100%;
+  background: #0b1424;
+  border: 1px solid #334155;
+  color: white;
+  padding: 13px 15px;
+  border-radius: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: #06b6d4;
+  box-shadow: 0 0 0 2px #06b6d422;
+}
+
+.dashboard-panel {
+  background: #111c30;
+  border: 1px solid #25344c;
+  border-radius: 16px;
+  padding: 22px;
+}
+
+.dashboard-card {
+  background: linear-gradient(145deg, #14243c, #101a2c);
+  border: 1px solid #263b57;
+  border-radius: 15px;
+  padding: 22px;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-3px);
+  border-color: #0891b2;
+}
+
+.panel-title {
+  font-size: 19px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  background: #0891b2;
+  color: white;
+  padding: 12px 19px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.primary-button:hover {
+  background: #0e7490;
+}
+
+.map-wrapper {
+  height: 280px;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid #334155;
+}
+
+.vektor-map {
+  height: 100%;
+  width: 100%;
+  background: #17243a;
+}
+
+.upload-area {
+  border: 2px dashed #3b536e;
+  border-radius: 14px;
+  min-height: 155px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: #0c1729;
+  transition: border-color 0.2s;
+}
+
+.upload-area:hover {
+  border-color: #06b6d4;
+}
+
+.image-preview {
+  max-height: 350px;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.chat-box {
+  background: #0b1424;
+  border: 1px solid #26364d;
+  border-radius: 12px;
+  padding: 16px;
+  min-height: 150px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.chat-message {
+  max-width: 80%;
+  padding: 12px 15px;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .dashboard-panel {
+    padding: 16px;
+  }
+
+  .dashboard-card {
+    padding: 17px;
+  }
+
+  .chat-message {
+    max-width: 90%;
+  }
+}
