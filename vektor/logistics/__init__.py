@@ -1,1 +1,0 @@
-"""VEKTOR Logistics Brain."""
