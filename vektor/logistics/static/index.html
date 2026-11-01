@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VEKTOR Logistics Brain</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <style>
+    body { font: 16px system-ui, sans-serif; max-width: 1000px; margin: 2rem auto; padding: 0 1rem; color: #172033; }
+    form { display: flex; flex-wrap: wrap; gap: .75rem; align-items: end; margin-bottom: 1rem; }
+    label { display: grid; gap: .25rem; }
+    input, select, button { font: inherit; padding: .55rem; }
+    button { cursor: pointer; }
+    #map { height: 420px; border-radius: 8px; }
+    #status { min-height: 1.5rem; }
+    #supplies { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: .5rem; padding: 0; list-style: none; }
+    #supplies li { background: #f1f5f9; padding: .65rem; border-radius: 6px; }
+    .muted { color: #526174; }
+  </style>
+</head>
+<body>
+  <h1>VEKTOR Logistics Brain</h1>
+  <p class="muted">Create a starter relief plan. Verify all recommendations and destinations before dispatch.</p>
+  <form id="plan-form">
+    <label>Location
+      <input id="location" name="location" value="New Delhi, India" required minlength="2" maxlength="200">
+    </label>
+    <label>Disaster
+      <select id="disaster-type" name="disaster_type">
+        <option value="flood">Flood</option>
+        <option value="earthquake">Earthquake</option>
+        <option value="wildfire">Wildfire</option>
+        <option value="cyclone">Cyclone</option>
+        <option value="landslide">Landslide</option>
+      </select>
+    </label>
+    <button type="submit">Build mission plan</button>
+  </form>
+  <p id="status" role="status"></p>
+  <section id="mission" hidden>
+    <h2>Mission summary</h2>
+    <p id="summary"></p>
+    <p id="route-details"></p>
+    <h3>Recommended supplies</h3>
+    <ul id="supplies"></ul>
+  </section>
+  <div id="map" aria-label="Map showing the route and relief hub"></div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script>
+    const map = L.map("map").setView([28.6139, 77.2090], 5);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+    let activeRoute;
+    let activeMarkers;
+
+    document.getElementById("plan-form").addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const status = document.getElementById("status");
+      status.textContent = "Looking up the location and planning a route...";
+      try {
+        const response = await fetch("/plan", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            location: document.getElementById("location").value,
+            disaster_type: document.getElementById("disaster-type").value
+          })
+        });
+        const plan = await response.json();
+        if (!response.ok) throw new Error(plan.detail || "Could not create the plan.");
+
+        document.getElementById("mission").hidden = false;
+        document.getElementById("summary").textContent = plan.mission_summary;
+        document.getElementById("route-details").textContent =
+          `Destination: ${plan.destination.name} · ${(plan.route.distance_m / 1000).toFixed(1)} km · ` +
+          `${Math.round(plan.route.duration_s / 60)} min (estimated)`;
+        const supplies = document.getElementById("supplies");
+        supplies.replaceChildren(...plan.recommended_supplies.map((item) => {
+          const entry = document.createElement("li");
+          entry.textContent = `${item.name}: ${item.quantity} ${item.unit}` +
+            (item.shortage ? ` (short by ${item.shortage})` : "");
+          return entry;
+        }));
+
+        if (activeRoute) map.removeLayer(activeRoute);
+        if (activeMarkers) map.removeLayer(activeMarkers);
+        activeRoute = L.polyline(plan.route.geometry, { color: "#1769aa", weight: 5 }).addTo(map);
+        activeMarkers = L.featureGroup([
+          L.marker([plan.route.origin.latitude, plan.route.origin.longitude]).bindPopup("Incident location"),
+          L.marker([plan.destination.latitude, plan.destination.longitude]).bindPopup(plan.destination.name)
+        ]).addTo(map);
+        map.fitBounds(activeRoute.getBounds(), { padding: [24, 24] });
+        status.textContent = "Mission plan created.";
+      } catch (error) {
+        status.textContent = error.message;
+      }
+    });
+  </script>
+</body>
+</html>
